@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui" : "rm -vrf build && cd ../fullstack2020/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../puhelinluettelo_backend/",
+    "deploy" : "git push heroku master"
   },
   "repository": {
     "type": "git",
