@@ -7,8 +7,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui" : "rm -vrf build && cd ../fullstack2020/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../puhelinluettelo_backend/",
-    "deploy" : "git push heroku master"
+    "build:ui": "rm -vrf build && cd ../fullstack2020/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../puhelinluettelo_backend/",
+    "deploy": "git push heroku master"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,10 @@
   "homepage": "https://github.com/JRamone/puhelinluettelo_backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.9.28",
+    "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
