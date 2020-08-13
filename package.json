@@ -8,7 +8,9 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -vrf build && cd ../fullstack2020/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../puhelinluettelo_backend/",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "lint": "eslint .",
+    "lintandfix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,12 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "nodemon": "^2.0.4"
   }
 }
